@@ -1,0 +1,11 @@
+<!-- <app-hero-details [myhero]="myhero"></app-hero-details> -->
+
+<h1 style="text-align: center;">List of all Heroes</h1>
+<ul class="items">
+    <ng-container *ngFor="let hero of heroes">
+        <a routerLink="/details/{{hero.id}}" style="text-decoration:none">
+        <app-hero-in-for  [hero]="hero"></app-hero-in-for>
+    </a>
+    </ng-container>
+</ul>
+

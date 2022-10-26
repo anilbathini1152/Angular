@@ -1,0 +1,25 @@
+<li class="item">
+    <!-- <img [src]="hero.img" [alt]="hero.name" style="width: 200px;height: 200px;">
+    <div>ID:{{hero.id}}</div>
+    <div>Name:{{hero.name | titlecase}}</div> -->
+
+
+
+    <mat-card class="example-card mx-1 my-2">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title class="">{{hero.name | uppercase}}</mat-card-title>
+          <mat-card-subtitle class="">Details</mat-card-subtitle>
+          <!-- <img mat-card-avatar [src]="hero.img"> -->
+        </mat-card-header>
+        <img mat-card-xl-image [src]="hero.img" [alt]="hero.name" class="mx-4 mt-1 mb-3" >
+        <mat-card-content class="mx-4">
+          <div>
+            <p class="h5">Id: {{hero.id}}</p>
+            <p class="h5">Name: {{hero.name}}</p>
+            <p class="h5">Power: {{hero.power}}</p>
+           </div>
+        </mat-card-content>
+        
+      </mat-card>
+</li>

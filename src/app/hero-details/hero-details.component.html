@@ -1,0 +1,36 @@
+<!-- <ng-container *ngIf="myhero">
+    <h2>{{myhero.name | uppercase}} Details</h2>
+    <img [src]="myhero.img" [alt]="myhero.name" style="height: 200px; width: 200px;">
+    <div>id: {{myhero.id}}</div>
+    <div>
+      <label for="hero-name">Hero name: </label>
+      <input id="hero-name" [(ngModel)]="myhero.name" placeholder="name">
+    </div>
+    <button type="button" (click)="goBack()">go back</button>
+</ng-container> -->
+
+<!-- mat card fr display in card -->
+
+<ng-container *ngIf="myhero">
+<mat-card style="width:25%;" class="example-card mx-auto">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title class="">{{myhero.name | uppercase}}</mat-card-title>
+    <mat-card-subtitle class="">Details</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-xl-image [src]="myhero.img" [alt]="myhero.name" class="mx-4 mt-1 mb-3" >
+  <mat-card-content class="mx-4">
+    <div>
+      <p class="h5">id: {{myhero.id}}</p>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label class="text-white">Hero Name</mat-label>
+        <input matInput [(ngModel)]="myhero.name" [value]="myhero.name">
+      </mat-form-field>
+      <p class="h5">Power: {{myhero.power}}</p>
+     </div>
+  </mat-card-content>
+  <mat-card-actions class="mx-2">
+    <button class="mx-auto" mat-button (click)="goBack()">Go Back</button>
+  </mat-card-actions>
+</mat-card>
+</ng-container>

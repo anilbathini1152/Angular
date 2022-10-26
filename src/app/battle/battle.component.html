@@ -1,0 +1,49 @@
+<!-- <ng-container *ngFor="let i of heroes">
+    <p>{{i.name}}</p>
+</ng-container> -->
+<!-- <h1>bdskajd {{this.hero}}</h1> -->
+<div style="text-align: center;">
+  <button class="btn btn-danger" *ngIf="!show1 && !winf" (click)="shuffleCards()">Start Battle</button>
+  <button class="btn btn-danger" *ngIf="((show1) && (!winf))&&(indx<5)" (click)="battle()">Start Round {{indx+1}}</button>
+  <button class="btn btn-danger" *ngIf="((show1) && (!winf))&&(indx>=5)" (click)="battle()">View Results</button>
+  <button class="btn btn-outline-primary" *ngIf="winf" (click)="this.ngOnInit()" mat-flat-button> Restart </button>
+
+</div>
+
+<div class="container mt-5" style="text-align: center;">
+  <div class="row">
+    <div class="col-md h2">
+      Player One
+      <div *ngIf="show">
+        <div>{{p1count}}</div>
+        <app-hero-in-for [hero]="hero1"></app-hero-in-for>
+      </div>
+    </div>
+    <div class="col-sm h5">
+      Battles
+      <div *ngIf="show" class="mt-5 text-success">
+        <p *ngIf="P1">Player One Won the round</p>
+        <p *ngIf="(!P1)&&(!draw)">Player Two Won the round</p>
+        <p *ngIf="(!P1)&&(draw)">Draw</p>
+      </div>
+
+      <div *ngIf="win!==-1" class="mt-5 text-success">
+        <div *ngFor="let i of winlog; let ind=index">
+          <p>
+            Round {{ind+1}} :{{i}}
+          </p>
+        </div>
+        <p>Player {{win}} Won the Game</p>
+      </div>
+    </div>
+    <div class="col-md h2">
+      Player Two
+
+      <div *ngIf="show">
+        <div>{{p2count}}</div>
+        <app-hero-in-for [hero]="hero2"></app-hero-in-for>
+      </div>
+
+    </div>
+  </div>
+</div>
