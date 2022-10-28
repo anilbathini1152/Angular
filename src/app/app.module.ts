@@ -18,6 +18,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import { ArenaComponent } from './arena/arena.component';
 import { BattleComponent } from './battle/battle.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { BattleComponent } from './battle/battle.component';
     DashboardComponent,
     ArenaComponent,
     BattleComponent,
+    LoginComponent,
 
     
   ],

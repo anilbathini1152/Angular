@@ -58,7 +58,10 @@ export class BattleComponent implements OnInit {
 
   // hero1=this.heroes[0]
   setHero() {
-    this.heroService.getHeroes().subscribe(heroes => this.heroes = heroes);
+    this.heroService.getHeroes().subscribe(heroes => {
+      this.heroes = heroes;
+      this.shuffleCards();
+    });
   }
 
   arrangeCards() {

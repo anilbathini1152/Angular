@@ -5,6 +5,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroDetailsComponent } from './hero-details/hero-details.component';
 import { ArenaComponent } from './arena/arena.component';
 import { BattleComponent } from './battle/battle.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path:'heroes',component:HeroesComponent },
   { path: 'details/:id', component: HeroDetailsComponent },
   {path:'arena',component:ArenaComponent},
-  {path:'battle',component:BattleComponent}
+  {path:'battle',component:BattleComponent},
+  {path:'login',component:LoginComponent  }
 ];
 
 @NgModule({
