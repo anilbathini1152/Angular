@@ -2,9 +2,3 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-@media screen and (min-width: 768) { 
-    .border-sm-right {
-        border-radius:50%;
-        color: rgb(158, 43, 43);
-    }
-}
