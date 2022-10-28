@@ -1,14 +1,14 @@
-<div class="container rounded d-flex bd-highlight justify-content-center align-item-center px-xs-3 px-lg-5 py-5"
+<div class="container-sm rounded d-flex bd-highlight justify-content-center align-item-center m-xs-2 px-xs-3 px-lg-5 py-5"
     style="background-color:#d2d0dd">
-    <div class="container  align-item-center mx-xs-5 mx-md-5 my-md-2 my-xs-2 my-auto ">
+    <div class="container  align-item-center mx-xs-5 mx-md-5 my-md-2 my-xs-2">
         <div class="d-flex flex-md-row flex-column-reverse" *ngIf="!forgetPasswordFlag">
 
-            <div class="col-xs-12 col-md-6 bg-white rounded">
-                <div class="h6 pt-sm-1 pl-sm-1">Inncircles</div>
-                <div class="h4 px-xs-5 pt-5 px-sm-4">Welcome back</div>
-                <p class="px-xs-5 px-sm-4">Welcome back! please enter your details</p>
+            <div class="col-xs-12 col-md-6 bg-white rounded-start-md rounded">
+                <div class="h6 pt-1 ps-2">Inncircles</div>
+                <div class="h4 ps-3 pt-5 px-sm-4">Welcome back!</div>
+                <p class="ps-3 px-sm-4">Please enter your details</p>
 
-                <form class="px-xs-5 px-sm-4 pt-2 pb-5">
+                <form class="px-3 px-sm-5 pt-2 pb-5">
                     <div class="form-group py-2">
                         <label for="exampleInputEmail1">Email</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email">
@@ -29,7 +29,7 @@
                 </form>
             </div>
 
-            <div class="col-xs-12 col-md-6 pb-xs-3 pb-md-4 d-flex align-content-center flex-wrap rounded"
+            <div class="col-xs-12 d-none d-md-flex col-md-6 pb-xs-3 pb-md-4 align-content-center flex-wrap rounded"
                 style="background-color: #f3f4f8; ">
                 <img src="./assets/cons.svg" style="width: 50%;-webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4))" class="mx-auto  d-block" alt="">
             </div>
@@ -38,19 +38,17 @@
         <div class="d-flex flex-md-row flex-column" *ngIf="forgetPasswordFlag">
 
 
-            <div class="col-xs-12 col-md-6 pb-xs-3 d-flex align-content-center flex-wrap rounded"
-                style="background-color: #f3f4f8;">
-                <div class="h6 pt-sm-1 pl-sm-1" id="overlay">Inncircles</div>
+            <div  class="col-md-6 pb-3 d-none d-md-flex d-flex align-content-center flex-wrap rounded" style="background-color: #f3f4f8;">
                 <img src="./assets/forgot.svg" style="width: 70%;" class="img-fluid mx-auto  d-block" alt="">
             </div>
 
 
-            <div class="col-xs-12 col-md-6 bg-white rounded">
-                
-                <div class="h4 px-xs-5 pt-5 px-sm-4">Forgot Password?</div>
-                <p class="px-xs-5 px-sm-4">Don't worry we are here to help you..</p>
+            <div class="col-md-6 bg-white rounded">
+                <div class="h6 pt-sm-1 ps-sm-1 text-muted" >Inncircles</div>
+                <div class="h4 px-3 pt-5 px-sm-4">Forgot Password?</div>
+                <p class="px-3 px-sm-4">Don't worry we are here to help you..</p>
 
-                <form class="px-xs-5 px-sm-4 pt-2 pb-5">
+                <form class="px-3 px-sm-5 pt-2 pb-5">
                     <div class="form-group py-2">
                         <label for="exampleInputEmail1">Email ID</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email">
@@ -66,13 +64,11 @@
                         <button class="btn btn-primary" type="submit">Send Email</button>
                     </div>
                 </form>
+ 
             </div>
 
 
 
         </div>
     </div>
-</div>
-<div class="border-sm-right">
-    lksdhflksnc
 </div>
