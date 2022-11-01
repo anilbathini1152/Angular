@@ -3,10 +3,15 @@
 </ng-container> -->
 <!-- <h1>bdskajd {{this.hero}}</h1> -->
 <div style="text-align: center;">
-  <button class="btn btn-danger" *ngIf="!show1 && !winf" (click)="shuffleCards()">Start Battle</button>
-  <button class="btn btn-danger" *ngIf="((show1) && (!winf))&&(indx<5)" (click)="battle()">Start Round {{indx+1}}</button>
-  <button class="btn btn-danger" *ngIf="((show1) && (!winf))&&(indx>=5)" (click)="battle()">View Results</button>
-  <button class="btn btn-outline-primary" *ngIf="winf" (click)="this.ngOnInit()" mat-flat-button> Restart </button>
+  <button class="btn btn-danger mt-2" *ngIf="!show1 && !winf">
+    
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </button>
+  <button class="btn btn-danger mt-2" *ngIf="((show1) && (!winf))&&(indx<5)" (click)="battle()">Start Round {{indx+1}}</button>
+  <button class="btn btn-danger mt-2" *ngIf="((show1) && (!winf))&&(indx>=5)" (click)="battle()">View Results</button>
+  <button class="btn btn-outline-primary mt-2" *ngIf="winf" (click)="this.ngOnInit()" mat-flat-button> Restart </button>
 
 </div>
 
